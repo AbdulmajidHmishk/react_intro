@@ -38,9 +38,9 @@ function App() {
 
       try {
         await new Promise(resolve => setTimeout(resolve, 1000));
-        if (Math.random() > 0.7) {
-          throw new Error('Fehler beim Abrufen des Zitats!');
-        }
+        // if (Math.random() > 0.7) {
+        //   throw new Error('Fehler beim Abrufen des Zitats!');
+        // }
         const selectedQuote = gotQuotes[currentQuoteIndex];
         setFetchedQuote(selectedQuote);
       } catch (err) {
